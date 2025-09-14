@@ -1,12 +1,113 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Pheneas Newman</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #1a1f2e;
+      --text: #e6e6e6;
+      --muted: #a7b0c0;
+      --accent: #6ea8fe;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header, footer, main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.25rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0.2rem 0 1rem;
+      color: var(--muted);
+    }
+    nav a {
+      color: var(--muted);
+      margin-right: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 16px;
+      margin: 1rem 0;
+    }
+    h2 { margin-top: 0; }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--accent); }
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 2rem 0 3rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>temp</h1>
-  <p>temp2</p>
+  <header>
+    <h1>Pheneas Newman</h1>
+    <p>MSc Quantitative Methods for Risk Management (LSE), BSc Mathematics with Actuarial Science (QMUL)</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p> about me
+        <p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project 1:</li>
+        <li><strong>Project 2:</li>
+        <li><strong>Project 3:</li>
+        <li><strong>Project 4:</li>
+      </ul>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p><a href="cv/PheneasNewmanCV.pdf" download>Download my CV (PDF)</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:pheneasnewman@gmail.com">pheneaswork@gmail.com</a></p>
+      <p>
+        <a href="https://github.com/pheneas123">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/pheneasnewman">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Pheneas Newman</small>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
