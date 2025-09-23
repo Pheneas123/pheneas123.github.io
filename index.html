@@ -1,149 +1,140 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-   <meta charset="utf-8">
-   <title>Pheneas Newman</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <style>
-      :root {
+   <head>
+      <meta charset="utf-8">
+      <title>Pheneas Newman</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+         :root {
          --bg: #0f1115;
          --card: #1a1f2e;
          --text: #e6e6e6;
          --muted: #a7b0c0;
          --accent: #6ea8fe;
-      }
-
-      * {
+         }
+         * {
          box-sizing: border-box;
-      }
-
-      body {
+         }
+         body {
          margin: 0;
          font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
          background: var(--bg);
          color: var(--text);
          line-height: 1.6;
-      }
-
-      header,
-      footer,
-      main {
+         }
+         header,
+         footer,
+         main {
          max-width: 900px;
          margin: 0 auto;
          padding: 1.25rem;
-      }
-
-      header h1 {
+         }
+         header h1 {
          margin: 0;
          font-size: 2.2rem;
-      }
-
-      header p {
+         }
+         header p {
          margin: 0.2rem 0 1rem;
          color: var(--muted);
-      }
-
-      nav a {
+         }
+         nav a {
          color: var(--muted);
          margin-right: 1rem;
          text-decoration: none;
          font-weight: 500;
-      }
-
-      nav a:hover {
+         }
+         nav a:hover {
          color: var(--accent);
-      }
-
-      section {
+         }
+         section {
          background: var(--card);
          padding: 1.5rem;
          border-radius: 16px;
          margin: 1rem 0;
-      }
-
-      h2 {
+         }
+         h2 {
          margin-top: 0;
-      }
-
-      ul {
+         }
+         ul {
          padding-left: 1.2rem;
-      }
-
-      a {
+         }
+         a {
          color: var(--accent);
-      }
-
-      footer {
+         }
+         footer {
          color: var(--muted);
          text-align: center;
          padding: 2rem 0 3rem;
-      }
-   </style>
-</head>
-
-<body>
-   <header>
-      <h1>Pheneas Newman</h1>
-      <p>MSc Quantitative Methods for Risk Management (LSE), BSc Mathematics with Actuarial Science (QMUL)</p>
-      <nav>
-         <a href="#about">About</a>
-         <a href="#projects">Projects</a>
-         <a href="#cv">CV</a>
-         <a href="#contact">Contact</a>
-      </nav>
-   </header>
-
-   <main>
-      <section id="about">
-         <h2>About</h2>
-         <p>Recent graduate looking for roles in quantitative finance. Currently learning C++ for applications in high frequency trading.</p>
-      </section>
-
-      <section id="projects">
-         <h2>Projects</h2>
-         <ul>
-            <li>
-               <strong>DDPG/TD3 Fishing Vessel Collision Avoidance:</strong>
-               <p>
-                  Group project at LSE for Reinforcement Learning. Designed an RL agent for
-                  dynamic collision avoidance, compared with TD3 and FDDPG algorithms.
-                  Final mark: 91% 
-                  <a href = "https://github.com/Pheneas123/DDPG-Collision-Avoidance" target="_blank"> Repository</a>
-               </p>
-            </li>
-            <li>
-               <strong>Bayesian Regression for Financial Forecasting:</strong>
-               <p>
-                  Used Bayesian regression models to forecast short-term financial returns
-                  for guiding trading decisions. Final mark: 85% ·
-                  <a href="projects/BayesianML.pdf" target="_blank">View PDF</a>
-               </p>
-            <li>
-               <strong>Option Pricing Calculator:</strong>
-               <p>
-                  Designed a pricing and financial Greeks calculator for European, American, and Binary options, written in C++.
-                  <a href="https://pheneas123.github.io/simple-options-pricing-calculator/" target="_blank">
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Pheneas Newman</h1>
+         <p>MSc Quantitative Methods for Risk Management (LSE), BSc Mathematics with Actuarial Science (QMUL)</p>
+         <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+         </nav>
+      </header>
+      <main>
+         <section id="about">
+            <h2>About</h2>
+            <p>Recent graduate looking for roles in quantitative finance. Currently learning C++ for applications in high frequency trading.</p>
+         </section>
+         <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+               <li>
+                  <strong>DDPG/TD3 Fishing Vessel Collision Avoidance:</strong>
+                  <p>
+                     Group project at LSE for Reinforcement Learning. Designed an RL agent for
+                     dynamic collision avoidance, compared with TD3 and FDDPG algorithms.
+                     Final mark: 91% 
+                     <a href = "https://github.com/Pheneas123/DDPG-Collision-Avoidance" target="_blank"> Repository</a>
+                  </p>
+               </li>
+               <li>
+                  <strong>Bayesian Regression for Financial Forecasting:</strong>
+                  <p>
+                     Used Bayesian regression models to forecast short-term financial returns
+                     for guiding trading decisions. Final mark: 85% ·
+                     <a href="projects/BayesianML.pdf" target="_blank">View PDF</a>
+                  </p>
+               <li>
+                  <strong>Option Pricing Calculator:</strong>
+                  <p>
+                     Designed a pricing and financial Greeks calculator for European, American, and Binary options, written in C++.
+                     <a href="https://pheneas123.github.io/simple-options-pricing-calculator/" target="_blank">
                      Calculator
-                  </a>
-               </p>
-            </li>
-         </ul>
-      </section>
-      <section id="cv">
-         <h2>CV</h2>
-         <p><a href="cv/PheneasNewmanCV.pdf" download>Download my CV (PDF)</a></p>
-      </section>
-
-      <section id="contact">
-         <h2>Contact</h2>
-         <p>Email: <a href="mailto:pheneasnewman@gmail.com">pheneasnewman@gmail.com</a></p>
-         <p>
-            <a href="https://github.com/pheneas123">GitHub</a> ·
-            <a href="https://www.linkedin.com/in/pheneas-newman">LinkedIn</a>
-         </p>
-      </section>
-   </main>
-</body>
-
+                     </a>
+                  </p>
+               </li>
+               <li>
+                  <strong>Volatility Modelling Project:</strong>
+                  <p>
+                     Built and backtested volatility forecasting models (e.g., GARCH variants) with evaluation of predictive accuracy.
+                     <a href="projects/VolatilityProj.pdf" target="_blank">
+                     PDF Report
+                     </a>
+                  </p>
+               </li>
+            </ul>
+         </section>
+         <section id="cv">
+            <h2>CV</h2>
+            <p><a href="cv/PheneasNewmanCV.pdf" download>Download my CV (PDF)</a></p>
+         </section>
+         <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:pheneasnewman@gmail.com">pheneasnewman@gmail.com</a></p>
+            <p>
+               <a href="https://github.com/pheneas123">GitHub</a> ·
+               <a href="https://www.linkedin.com/in/pheneas-newman">LinkedIn</a>
+            </p>
+         </section>
+      </main>
+   </body>
 </html>
