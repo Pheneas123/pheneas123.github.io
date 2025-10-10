@@ -1,0 +1,86 @@
+#set page(margin: 0.4in)
+#set heading(numbering: none)
+#set text(font: "TeX Gyre Termes", size: 10.7pt)
+#set text(region: "GB")
+#show link: set text(fill: blue)
+#show link: underline
+#align(center)[
+  #text(16pt, weight: "bold")[Pheneas Newman]
+]
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  gutter: 0pt,
+  [
+    #link("mailto:pheneasnewman@gmail.com")[pheneasnewman\@gmail.com]
+  ],
+  [
+    #align(center)[+44 7534 917709]
+  ],
+  [
+    #align(right)[
+      #link("https://www.linkedin.com/in/pheneas-newman/")[LinkedIn] |
+      #link("https://github.com/pheneas123")[GitHub] |
+      #link("https://pheneas123.github.io/")[Website]
+    ]
+  ]
+)
+
+
+#line(length: 100%)
+
+== Profile
+MSc graduate in Quantitative Methods for Risk Management (LSE, Distinction) with a First-Class BSc in Mathematics with Actuarial Science (QMUL). Skilled in Python, C++, and R for quantitative finance, stochastic modelling, derivatives pricing, and machine learning. Author of an open-source finance library on PyPI. Self-taught in C++ with a strong interest in numerical methods, optimisation, and simulations. A fast learner with a passion for applying quantitative methods to financial problems and developing practical, data-driven solutions.
+
+#line(length: 100%)
+
+== Education
+
+#grid(columns: (2fr, 1fr), gutter: 0pt,
+  [*London School of Economics*],
+  [#align(right)[Sept 2024 – July 2025]]
+)
+MSc Quantitative Methods for Risk Management — *Distinction*
+- Studied stochastic processes, reinforcement learning, stochastic simulations, and risk analysis.
+- Applied stochastic calculus and matrix factor models to financial data, strengthening expertise in quantitative research.
+- *Optiver Trading Course:* Designed and tested a systematic trading algorithm in Python.
+- *LSE–Allianz Statistics Challenge:* Applied advanced statistics to model insurance claims, developing teamwork, collaboration, and research skills.
+
+#grid(columns: (2fr, 1fr), gutter: 0pt,
+  [*Queen Mary University of London*],
+  [#align(right)[Sept 2019 – July 2024]]
+)
+BSc Mathematics with Actuarial Science — *First Class Honours*
+- Developed strong foundations in financial mathematics, financial engineering, time-series analysis, and machine learning.
+- Achieved top marks in quantitative modules: Time Series (94%), Machine Learning (89%), Financial Mathematics (91%), Actuarial Financial Engineering (87%).
+- Achieved exemptions from six IFoA professional actuarial exams (CM1, CM2, CS1, CS2, CB1, CB2).
+
+#line(length: 100%)
+
+== Technical Skills
+- *Programming:* Python (NumPy, Pandas, PyTorch, TensorFlow, PyMC), C++ (numerical methods, optimisation, simulations), R (rugarch, copula, ggplot2).
+- *Finance:* Derivatives pricing, Greeks, stochastic modelling, volatility forecasting, GARCH-family models, Value-at-Risk and Expected Shortfall.
+- *Tools:* Git/GitHub (PyPI publishing), LaTeX, Excel (Certified Specialist), Vim, VS-Code, VS.
+
+#line(length: 100%)
+
+== Projects & Research | #link("https://pheneas123.github.io/#projects")[Portfolio] |
+
+*quantitativelib (Open-Source Library)*
+- Published Python finance library on PyPI/GitHub; implements Black–Scholes pricing, Greeks, and stochastic models (GBM, CIR, Heston, OU, Merton jumps).
+- Includes SDE solvers, GARCH-based VaR backtesting, and automated plotting utilities.
+- Independent project demonstrating initiative and ability to design and package quantitative finance tools in Python.
+
+*Volatility Forecasting Models*
+- Built and validated GARCH-family and EWMA models in R; evaluated forecasts with Value-at-Risk exceedances.
+- Automated rolling forecasts and visualised results in ggplot2.
+- Strengthened expertise in time-series modelling, predictive analytics, and financial risk management.
+
+*Reinforcement Learning for Vessel Collision Avoidance (91%) - #link("https://github.com/Pheneas123/DDPG-Collision-Avoidance")[Repository]*
+- Designed a custom Gym-style environment in Python for multi-agent navigation.
+- Implemented DDPG and TD3 agents in PyTorch; tuned with Optuna and built reproducible pipelines.
+- Showcased skills in *reinforcement learning, scalable simulations, and real-time optimisation methods*.
+
+#line(length: 100%)
+
+== Interests
+Game development and application design in C++ (Raylib, Qt, ImGUI), fitness and gym, films, current events.
