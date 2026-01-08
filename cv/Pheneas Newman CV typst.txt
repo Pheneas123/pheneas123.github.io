@@ -1,6 +1,6 @@
-#set page(margin: 0.4in)
+#set page(margin: 0.659in)
 #set heading(numbering: none)
-#set text(font: "TeX Gyre Termes", size: 10.7pt)
+#set text(font: "TeX Gyre Termes", size: 11pt)
 #set text(region: "GB")
 #show link: set text(fill: blue)
 #show link: underline
@@ -28,9 +28,33 @@
 
 #line(length: 100%)
 
-== Profile
-MSc graduate in Quantitative Methods for Risk Management (LSE, Distinction) with a First-Class BSc in Mathematics with Actuarial Science (QMUL). Skilled in Python, C++, and R for quantitative finance, stochastic modelling, derivatives pricing, and machine learning. Author of an open-source finance library on PyPI. Self-taught in C++ with a strong interest in numerical methods, optimisation, and simulations. A fast learner with a passion for applying quantitative methods to financial problems and developing practical, data-driven solutions.
+== Projects & Research | #link("https://pheneas123.github.io/#projects")[Portfolio] |
 
+*quantitativelib (Open-Source Library) - #link("https://pypi.org/project/quantitativelib/")[PyPI page]*
+- Implements price and returns analysis, Black–Scholes pricing, Greeks, stochastic models (GBM, CIR, Heston, OU, Merton jumps), SDE solvers, and GARCH-based VaR backtesting.
+- Built around a single high-level function that fetches data, runs analysis, and produces plots in one call.
+- Designed to expose both one-line analysis workflows and underlying reusable components for pricing and simulation.
+
+*Bayesian Regression for Financial Forecasting - #link("https://pheneas123.github.io/projects/BayesianML.pdf")[PDF]*
+- Developed a rolling-window Bayesian regression model for SPY returns (2014–2024, ~2,700 observations) using Laplace shrinkage priors and a Student-t likelihood.
+- Performed one-step-ahead forecasting with *252-day* windows via 10,000-step ADVI; achieved *RMSE 0.0112*, *MAE 0.0073*, and *53.5% directional accuracy*.
+- Used posterior uncertainty to construct probabilistic signals and assessed their out-of-sample stability relative to OLS and Ridge under identical rolling-window evaluation.
+
+*Volatility Forecasting Models - #link("https://pheneas123.github.io/projects/VolatilityProj.pdf")[PDF]*
+- Built and validated GARCH-family and EWMA models in R; evaluated forecasts with Value-at-Risk exceedances.
+- Automated rolling forecasts and visualised results in ggplot2.
+- Found standard GARCH and EWMA performed poorly in likelihood and backtesting; EWMA failed VaR coverage tests, and GARCH underperformed in low-volatility regimes (violation ratio ≈ 0.4).
+- Identified GARCH models with Student-t and skewed Student-t innovations as the strongest performers, consistently passing VaR backtests and producing reliable volatility forecasts for risk management.
+
+*Reinforcement Learning for Vessel Collision Avoidance - #link("https://github.com/Pheneas123/DDPG-Collision-Avoidance")[Repository]*
+- Designed a custom Gym-style environment in Python for multi-agent navigation.
+- Implemented DDPG and TD3 agents in PyTorch; tuned reward function coefficients with Optuna. 
+- TD3 model achieved success rate of *90.35%* with a collision rate of *3.65%*.
+
+*Online Option Pricing Calculator - #link("https://pheneas123.github.io/simple-options-pricing-calculator/")[Link]*
+- Implemented European option pricing using closed-form Black–Scholes formulas with analytical Greeks.
+- Priced American options via a recombining binomial tree with early-exercise logic.
+- Implemented cash-or-nothing binary options using closed-form risk-neutral pricing.
 #line(length: 100%)
 
 == Education
@@ -40,47 +64,16 @@ MSc graduate in Quantitative Methods for Risk Management (LSE, Distinction) with
   [#align(right)[Sept 2024 – July 2025]]
 )
 MSc Quantitative Methods for Risk Management — *Distinction*
-- Studied stochastic processes, reinforcement learning, stochastic simulations, and risk analysis.
-- Applied stochastic calculus and matrix factor models to financial data, strengthening expertise in quantitative research.
-- *Optiver Trading Course:* Designed and tested a systematic trading algorithm in Python.
-- *LSE–Allianz Statistics Challenge:* Applied advanced statistics to model insurance claims, developing teamwork, collaboration, and research skills.
 
 #grid(columns: (2fr, 1fr), gutter: 0pt,
   [*Queen Mary University of London*],
   [#align(right)[Sept 2019 – July 2024]]
 )
 BSc Mathematics with Actuarial Science — *First Class Honours*
-- Developed strong foundations in financial mathematics, financial engineering, time-series analysis, and machine learning.
-- Achieved top marks in quantitative modules: Time Series (94%), Machine Learning (89%), Financial Mathematics (91%), Actuarial Financial Engineering (87%).
-- Achieved exemptions from six IFoA professional actuarial exams (CM1, CM2, CS1, CS2, CB1, CB2).
 
 #line(length: 100%)
 
 == Technical Skills
-- *Programming:* Python (NumPy, Pandas, PyTorch, TensorFlow, PyMC), C++ (numerical methods, optimisation, simulations), R (rugarch, copula, ggplot2).
-- *Finance:* Derivatives pricing, Greeks, stochastic modelling, volatility forecasting, GARCH-family models, Value-at-Risk and Expected Shortfall.
-- *Tools:* Git/GitHub (PyPI publishing), LaTeX, Excel (Certified Specialist), Vim, VS-Code, VS.
-
-#line(length: 100%)
-
-== Projects & Research | #link("https://pheneas123.github.io/#projects")[Portfolio] |
-
-*quantitativelib (Open-Source Library)*
-- Published Python finance library on PyPI/GitHub; implements Black–Scholes pricing, Greeks, and stochastic models (GBM, CIR, Heston, OU, Merton jumps).
-- Includes SDE solvers, GARCH-based VaR backtesting, and automated plotting utilities.
-- Independent project demonstrating initiative and ability to design and package quantitative finance tools in Python.
-
-*Volatility Forecasting Models*
-- Built and validated GARCH-family and EWMA models in R; evaluated forecasts with Value-at-Risk exceedances.
-- Automated rolling forecasts and visualised results in ggplot2.
-- Strengthened expertise in time-series modelling, predictive analytics, and financial risk management.
-
-*Reinforcement Learning for Vessel Collision Avoidance (91%) - #link("https://github.com/Pheneas123/DDPG-Collision-Avoidance")[Repository]*
-- Designed a custom Gym-style environment in Python for multi-agent navigation.
-- Implemented DDPG and TD3 agents in PyTorch; tuned with Optuna and built reproducible pipelines.
-- Showcased skills in *reinforcement learning, scalable simulations, and real-time optimisation methods*.
-
-#line(length: 100%)
-
-== Interests
-Game development and application design in C++ (Raylib, Qt, ImGUI), fitness and gym, films, current events.
+- *Programming:* Python (Pandas, PyTorch, TensorFlow, PyMC, scikit-learn), C++, R (rugarch, copula, ggplot2).
+- *Quant Finance:* Derivatives pricing, Greeks, stochastic processes, martingales, volatility modelling, GARCH/ARMA, VaR & Expected Shortfall.
+- *Tools:* Git/GitHub (PyPI publishing), LaTeX, Typst, Excel (Certified Specialist), Vim, VS-Code, VS.
